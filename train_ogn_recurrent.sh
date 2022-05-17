@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py \
+--auto_gpu_config 0 \
+-n 25 \
+--num_processes_per_gpu 8 \
+--num_processes_on_first_gpu 1 \
+--sim_gpu_id 1 \
+--use_recurrent_global 1 \
+--num_mini_batch 25 \
+-d saved_recurrent/ \
+--exp_name exp1 \
+--save_periodic 500000
